@@ -456,7 +456,59 @@ margin-left:13%;
     color: gray;
     text-align: center;
     margin-top: 4%;
+}
+#searchbox{
+    /* border: 1px solid red; */
+    text-align: center;
+}
+#searchmenu{
+    /* border: 1px solid blue; */
+    display: flex;
+    width: 30%;
+    margin: auto;
 
 }
+#searchmenu>p{
+    
+    margin-left: 3%;
+}
+#checkbox{
+    /* border: 1px solid red; */
+    display: flex;
+    width: auto;
+    margin-left: 10.5%;
+    margin-top: 1%;
 
 
+}
+#checkbox>p{
+    margin-top: 0px;
+    margin-left: 2%;
+}
+#searchinput{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+}
+#searchinput>input{
+    width: 250px;
+    margin-left: 2%;
+}
+#searchinput>#travelers>button{
+    width: 280px;
+    height: 50px;
+    margin-left: 4%;
+    background-color: white;
+    border: 1px solid rgb(81, 74, 74);
+}
+hr{
+    width: 90%;
+}
+#searchtap{
+    background-color: rgb(199, 41, 125);
+    height: 50px;
+    width: 150px;
+    border-color: transparent;
+    color:white;
+    font-weight: bold;
+}
