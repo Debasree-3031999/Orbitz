@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/login-signup.css">
+    <style>
+        /* *{
+            border: 1px solid red;
+        } */
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <span class="glyphicon glyphicon-arrow-left"></span>
+        <div class="logod">
+            <img id="logoi" src="https://www.orbitz.com/_dms/interstitial/logo.svg?locale=en_US&siteid=70201" alt="logo">
+            <hr>
+        </div>
+    </div>
+
+    <div id="loginblock">
+        <h2>Create an Account</h2>
+        <form>
+            <input type="email" id="email" placeholder="Email address"><br>
+            <input type="text" id="fname" placeholder="First name"><br>
+            <input type="text" id="lname" placeholder="Last name"><br>
+            <input type="password" id="password" placeholder="Password"><br>
+            <div class="cbox">
+                <input type="checkbox" class="inpcbox">
+                <p class="cbtxt">This is a public or shared device</p>
+            </div>
+            <div class="decl">
+                <p id="dectxt">By creating an account, I agree to the Orbitz Terms and Conditions, Privacy Statement and Orbitz Rewards Terms and Conditions.</p>
+            </div>
+            <input id="bu" type="submit" value="Continue">
+        </form>
+        
+        <div class="signdiv">
+            
+                <p class="signtxt">Already have an account?<a href="login.html"> Sign in</a></p>
+                <p class="signtxt">or continue with</p>
+                <div class="img1">
+                    <img src="https://a.travel-assets.com/egds/marks/apple.svg" style="width:1.2vw">
+                    <img src="https://a.travel-assets.com/egds/marks/facebook.svg" style="width: 1.2vw">
+                </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script>
+    document.querySelector("form").addEventListener("submit", formSubmit);
+    var userData = JSON.parse(localStorage.getItem("userDataBase")) || [];
+    function formSubmit(event) {
+    event.preventDefault();
+    var email = document.querySelector("#email").value;
+    var pass = document.querySelector("#password").value;
+    var fname = document.querySelector("#fname").value;
+    var lname = document.querySelector("#lname").value;
+
+    var userD = {
+      emailAdd: email,
+      passwd: pass,
+      frname: fname,
+      laname: lname,
+    };
+
+    userData.push(userD);
+    console.log(userData);
+    // console.log(userData);
+    localStorage.setItem("userDataBase", JSON.stringify(userData));
+    alert("signup success"); 
+    window.location.href = "login.html";
+  }
+</script>

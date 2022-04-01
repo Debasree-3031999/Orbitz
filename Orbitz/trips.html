@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trips page</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <style>
+        #fstdiv{
+            /* border: 1px solid; */
+            font-size:3vw ;
+            font-weight: bold;
+            margin-left: 27%;
+        }
+        #seconddiv{
+            /* border: 1px solid blue; */
+            width: 100%;
+            height: 600px;
+            /* margin: auto; */
+            text-align: center;}
+            #imgdiv{
+                /* border: 1px solid; */
+                margin: auto;
+                height: 250px;
+            }
+        #lockimg{
+            /* border: 1px solid red; */
+            margin-bottom: 6%;
+            /* margin: auto; */
+            margin-left: 2%;
+            height: 200px;
+        }
+        #signbutton{
+            margin-right: 16%;
+            width: 27%;
+            margin-left: 15%;
+            background-color: rgb(226, 46, 76);
+            font-size: 1.1vw;
+            border-radius: 3px;
+
+        }
+         #signbutton>a{
+             text-decoration: none;
+             color: white;
+             font-weight: bold;
+
+        }
+        #afterbutton{
+            border: 1px solid;
+            margin-top: 3%;
+            width: 40%;
+            margin-left: 30%;
+        }
+        #afterbutton>a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar"></div>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <div id="fstdiv">Trips</div>
+
+    <div id="seconddiv">
+
+       <div id="imgdiv"> <img  id="lockimg" src="https://a.travel-assets.com/egds/illustrations/uds-default/unlock__large.svg" alt="" srcset=""></div>
+        <button id="signbutton"><a href=""><p>Sign in or create free account</p></a></button>
+
+        <div id="afterbutton">
+           <a href=""><h4>Want to see a booking without singing in? </h4></a> 
+            <p>use an itinerary number to access it</p>
+        </div>
+
+    </div>
+
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div id="gettheapp_div">
+        <div id="leftside">
+            <img src="https://a.travel-assets.com/mad-service/footer/marquee/ORB_App_Footer_v1.jpg" alt="">
+        </div>
+        <div id="rightside">
+            <div id="upper">
+                <div id="scanleftside"><h2>Rewards are waiting for you in the Orbitz app</h2>
+                <ul><li>Earn 4% back when you book your hotel in app, vs. 3% on site</li>
+                <li>Get flight status and gate number notifications</li>
+            <li>Have questions about your stay? Message your hotel right in the app</li></ul></div>
+
+
+                <div id="scanimg"><img src="https://a.travel-assets.com/mad-service/qr-code/portfolio_app_landing/qr_app_landing_footer_orbitz.png" alt=""><p>Scan the QR code</p></div>
+            </div>
+            <div id="lower">
+            <h3>Text yourself a download link</h3>
+            <div id="inputandbutton">
+               <select name="" id="selectgetapp">
+                   <option value="" disabled selected>Country Code</option>
+                   <option value="usa">USA +1</option>
+                   <option value="ind">INDIA +91</option>
+                   <option value=""></option>
+                   <option value=""></option>
+                   <option value=""></option>
+               </select>
+                <input  id="phoneno" placeholder="Phone Number" type="number">
+                <button id="getappbutton">Get the app</button>
+            </div>
+            <p id='lowersmalltext'>By providing your number, you agree to receive a one-time automated text message with a link to get the app. Standard text message rates may apply.</p>
+            </div>
+        </div>
+        
+       <!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
+<script type="module" src="./scripts/trips.js"></script>
